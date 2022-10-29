@@ -1,0 +1,141 @@
+@font-face {
+	font-family: 'Roboto-Light';
+	src: url('../../fonts/Roboto-Light.eot');
+	src: local('☺'), url('../../fonts/Roboto-Light.woff') format('woff'), url('../../fonts/Roboto-Light.ttf') format('truetype'), url('../../fonts/Roboto-Light.svg') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto-Regular';
+	src: url('../../fonts/Roboto-Regular.eot');
+	src: local('☺'), url('../../fonts/Roboto-Regular.woff') format('woff'), url('../../fonts/Roboto-Regular.ttf') format('truetype'), url('../../fonts/Roboto-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto-Medium';
+	src: url('../../fonts/Roboto-Medium.eot');
+	src: local('☺'), url('../../fonts/Roboto-Medium.woff') format('woff'), url('../../fonts/Roboto-Medium.ttf') format('truetype'), url('../../fonts/Roboto-Medium.svg') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto-Bold';
+	src: url('../../fonts/Roboto-Bold.eot');
+	src: local('☺'), url('../../fonts/Roboto-Bold.woff') format('woff'), url('../../fonts/Roboto-Bold.ttf') format('truetype'), url('../../fonts/Roboto-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto-Black';
+	src: url('./../../../fonts/Roboto-Black.eot');
+	src: local('РІВС”'), url('./../../../fonts/Roboto-Black.woff') format('woff'), url('./../../../fonts/Roboto-Black.ttf') format('truetype'), url('./../../../fonts/Roboto-Black.svg') format('svg');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('./../../../fonts/OpenSans-Regular.eot');
+	src: local('РІВС”'), url('./../../../fonts/OpenSans-Regular.woff') format('woff'), url('./../../../fonts/OpenSans-Regular.ttf') format('truetype'), url('./../../../fonts/OpenSans-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gothic A1';
+	src: url('./../../../fonts/GothicA1-Regular.ttf');
+}
+
+$base-color: #E5E5E5;
+$footer-color: #2C2C2C;
+$lg:1440px;
+$sm:768px;
+$xs:360px;
+
+//шрифт для заголовков на страницах сделала поменьше, чем в макете. 64-й сильно огромный получается -_- /Lilly
+$fztitle: 2.5em;
+$fzp: 16px;
+$lhtitle: 64px; //line-height
+$lhp: 25px; //line-height p
+
+@mixin container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+@mixin ftcontainer {
+	max-width: 1092px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+@mixin btn {
+	background-color: #333333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 222px;
+	height: 71px;
+
+	span {
+		font-family: 'Roboto-Regular';
+		color: #FFFFFF;
+		font-size: 12px;
+		line-height: 12px;
+		letter-spacing: 0.2em;
+		text-transform: uppercase;
+	}
+}
+
+
+
+@mixin a_btn {
+	font-family: 'Gothic A1';
+	color: #FFFFFF;
+	font-size: 12px;
+	line-height: 12px;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+}
+
+@mixin btn_white {
+	background-color: #FFFFFF;
+	border: none;
+
+	span {
+		color: #333333;
+	}
+}
+
+@mixin titletop {
+	font-family: 'Roboto-Light';
+	font-weight: 300;
+	color: #BDBDBD;
+}
+
+@mixin titlebt {
+	font-family: "Roboto-Bold";
+	color: #333333;
+}
+
+@mixin big_number {
+	font-family: 'Roboto-Black';
+	color: rgba(242, 242, 242, 1);
+	font-size: 200px;
+	margin: 0;
+	padding-right: 3%;
+}
+
+@mixin btn__projects {
+	padding: 0;
+	width: 222px;
+	height: 71px;
+	background-color: #FFFFFF;
+	border: none;
+	
+}

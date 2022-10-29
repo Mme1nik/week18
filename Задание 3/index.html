@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+  <div>
+    <input type="text" id="name" placeholder="Введите имя">
+  </div>
+  <div>
+    <input type="text" id="avatar" placeholder="Введите ссылку на аватарку">
+  </div>
+  <div id="container"></div>
+  <textarea id='newComment' type="text"></textarea><br>
+  <button id="button">Send</button>
+      <script>
+         document.addEventListener("DOMContentLoaded", function(){
+          let name = document.getElementById('name');
+          if(localStorage.getItem('name')!==null){
+            name.value=localStorage.getItem('name');
+          }
+          let avatar = document.getElementById('avatar');
+          if(localStorage.getItem('avatar')!==null){
+            avatar.value=localStorage.getItem('avatar');
+          }
+          let comments = [];
+          if(localStorage.getItem('comment') !== null){
+            comments = JSON.parse(localStorage.getItem('comment'));
+            out();
+          }
+          document.getElementById('button').addEventListener('click', addComment);
+          function addComment(){
+          let comment = document.getElementById('newComment');
+          let commentItem = {
+            name: name.value,
+            avatar: avatar.value,
+            comment: comment.value
+          }
+          comments.push(commentItem);
+          out();
+          comment.value='';
+          localStorage.setItem('name', name.value);
+          localStorage.setItem('avatar', avatar.value);
+          localStorage.setItem('comment', JSON.stringify(comments));
+        }
+        function out(){
+          let out = '';
+          for (let e of comments){
+            out+=`<div class="border"><p class="text">${e.name}</p><div class="picture" style="background-image: url('${e.avatar}');"></div><span>${e.comment}</span></div>`
+          }
+          document.getElementById('container').innerHTML= out;
+        }
+
+        });
+        
+
+      </script>
+</body>
+</html>
+<!-- <div class="border"><p class="text">${name.value}</p><div class="picture" style="background-image: url('${avatar.value}');"></div><span>${elem}</span></div>` -->

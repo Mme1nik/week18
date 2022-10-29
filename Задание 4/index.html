@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+  
+  <div class="note">
+    <h1>Мои заметки</h1>
+    <div class="note__input">
+      <h3>Добавить новую заметку:</h3>
+      <div class="note__wrapper">
+        <input type="text" id="note__title" placeholder="Заголовок заметки">
+        <textarea rows="5" id="note__content" placeholder="Напишите здесь заметку"></textarea>
+        <button class="btn" id="note__add-btn">Добавить</button>
+      </div>
+    </div>
+
+    <div class="note__list"></div>
+    <button class="btn" id="delete-all">Удалить всё</button>
+  </div>
+      <script src="./index.js">
+      </script>
+</body>
+</html>

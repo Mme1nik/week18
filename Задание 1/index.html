@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Имя</legend>
+            <label for="pet_names">Кличка питомца</label>
+            <input type="text" id="pet_names" required><br><br>
+            <label for="owner_name">Имя владельца</label>
+            <input type="text" id="owner_name"><br><br>
+            <label for="owner_contacts" >Контакты владельца</label>
+            <input type="text" id="owner_contacts" required>
+        </fieldset>
+        <p>Выберите породу:</p>
+        <select>
+            <option value="1">Абиссинская кошка</option>
+            <option value="2">Американская жесткошерстная кошка</option>
+            <option value="3">Азиатская кошка</option>
+            <option value="4">Австралийский мист</option>
+            <option value="5">Балийская кошка</option>
+            <option value="6">Турецкий Ван</option>
+            <option value="7">Тонкинская кошка</option>
+            <option value="8">Шантильи-Тиффани</option>
+            <option value="9">Сомалийская кошка</option>
+            <option value="10">Сноу-шу</option>
+            <option value="11">Сингапура</option>
+            <option value="12">Сиамская</option>
+            <option value="13">Селкирк-Рекс</option>
+            <option value="14">Шотландская вислоухая</option>
+            <option value="15">Саванна</option>
+            <option value="16">Русская голубая</option>
+            <option value="17">Рэгдолл</option>
+            <option value="18">Пиксибоб</option>
+            <option value="19">Персидская</option>
+            <option value="20">Оцикет</option>
+            <option value="21">Норвежская лесная</option>
+            <option value="22">Манчкин</option>
+            <option value="23">Мэнкс</option>
+            <option value="24">Лаперм</option>
+            <option value="25">Корат</option>
+            <option value="26">Као-Мани</option>
+            <option value="27">Бобтейл</option>
+            <option value="28">Египетский мау</option>
+            <option value="29">Девон-Рекс</option>
+            <option value="30">Кимрик</option>
+            <option value="31">Корниш-Рекс</option>
+            <option value="32">Шиншилла</option>
+            <option value="33">Бурмилла</option>
+            <option value="34">Британская</option>
+            <option value="35">Бирманская</option>
+            <option value="36">Бенгальская</option>
+        </select>
+        <p>- Чем питается?</p>
+        <input type="checkbox" name="food" value="1">
+        <span>Сухой корм</span><br>
+        <input type="checkbox" name="food" value="2">
+        <span>Влажный корм корм</span><br>
+        <input type="checkbox" name="food" value="3">
+        <span>Натуральный корм</span><br>
+        <p>Пол питомца</p>
+        <input type="radio" name="sex" value="1">
+        <span>Самка</span><br>
+        <input type="radio" name="sex" value="2">
+        <span>Самец</span><br><br>
+        <label for="comments">Комментарий:</label><br><br>
+        <textarea name="comments" id="comments" rows="5" cols="20">Если хотите добавить что-то важное, можно написать здесь</textarea>
+        <p>Можете добавить фотографию питомца <input type="file"/></p>
+        <button>Сохранить</button>
+        <input type="reset"/>
+    </form>
+    <script>
+
+    </script>
+</body>
+</html>
